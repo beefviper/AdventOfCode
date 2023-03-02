@@ -33,6 +33,15 @@
     <ClCompile Include="source\Problems\2015\Year2015Day02Problem01.cpp">
       <Filter>Source Files\2015</Filter>
     </ClCompile>
+    <ClCompile Include="source\Problems\2015\Year2015Day02Problem02.cpp">
+      <Filter>Source Files\2015</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Problems\2015\Year2015Day03Problem01.cpp">
+      <Filter>Source Files\2015</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Problems\2015\Year2015Day03Problem02.cpp">
+      <Filter>Source Files\2015</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AdventOfCode.h">

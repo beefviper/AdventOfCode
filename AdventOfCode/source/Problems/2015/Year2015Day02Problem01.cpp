@@ -23,9 +23,48 @@ For example:
 All numbers in the elves' list are in feet. How many total square feet of wrapping paper should they order?
 */
 
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <algorithm>
+#include <cstdlib>
+
 int year2015day02problem01()
 {
-    
+    std::string inputFileName{ "data/Year2015Day02Problem01.txt" };
+    std::ifstream inputFile{ inputFileName };
 
-    return 0;
+    if (!inputFile)
+    {
+        std::cout << "Error opening file: " << inputFileName << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    int length{};
+    int width{};
+    int height{};
+    char delimiter{};
+    int totalArea{};
+
+    std::string dimensionsString{};
+    std::istringstream dimensions{};
+
+    while (std::getline(inputFile, dimensionsString))
+    {
+        dimensions.clear();
+        dimensions.str(dimensionsString);
+
+        dimensions >> length >> delimiter >> width >> delimiter >> height;
+
+        int lengthWidth{ length * width };
+        int widthHeight{ width * height };
+        int heightLength{ height * length };
+        int smallest{std::min({lengthWidth, widthHeight, heightLength})};
+        int area{ 2 * (lengthWidth + widthHeight + heightLength) };
+
+        totalArea += area + smallest;
+    }
+
+    return totalArea;
 }
