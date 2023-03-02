@@ -10,7 +10,14 @@ int main()
 
 	for (auto& problem : problems)
 	{
-		std::cout << problem.number << ": " << problem.function() << std::endl;
+		if (problem.answer != 0)
+		{
+			std::cout << problem.number << ": " << problem.answer << std::endl;
+		}
+		else
+		{
+			std::cout << problem.number << ": " << problem.function() << std::endl;
+		}
 	}
 
 	return 0;

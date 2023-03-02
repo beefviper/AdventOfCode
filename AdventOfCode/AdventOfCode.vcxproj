@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +130,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\md5.cpp" />
     <ClCompile Include="source\Problems.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day01Problem01.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day01Problem02.cpp" />
@@ -136,6 +138,8 @@
     <ClCompile Include="source\Problems\2015\Year2015Day02Problem02.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day03Problem01.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day03Problem02.cpp" />
+    <ClCompile Include="source\Problems\2015\Year2015Day04Problem01.cpp" />
+    <ClCompile Include="source\Problems\2015\Year2015Day04Problem02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AdventOfCode.h" />
