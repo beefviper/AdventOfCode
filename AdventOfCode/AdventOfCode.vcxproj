@@ -140,6 +140,8 @@
     <ClCompile Include="source\Problems\2015\Year2015Day03Problem02.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day04Problem01.cpp" />
     <ClCompile Include="source\Problems\2015\Year2015Day04Problem02.cpp" />
+    <ClCompile Include="source\Problems\2015\Year2015Day05Problem01.cpp" />
+    <ClCompile Include="source\Problems\2015\Year2015Day05Problem02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AdventOfCode.h" />
