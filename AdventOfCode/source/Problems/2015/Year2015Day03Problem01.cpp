@@ -68,5 +68,7 @@ int year2015day03problem01()
 
     int housesWithPresents = static_cast<int>(houses.size());
 
+    inputFile.close();
+
     return housesWithPresents;
 }

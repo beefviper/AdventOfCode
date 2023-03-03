@@ -33,5 +33,7 @@ int year2015day04problem02()
 		hash = md5(key + std::to_string(count));
 	} while (hash.substr(0, 6) != "000000");
 
+	inputFile.close();
+
 	return count;
 }

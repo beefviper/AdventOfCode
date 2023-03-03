@@ -66,5 +66,7 @@ int year2015day02problem02()
         totalRibbon += 2 * (sides.at(0) + sides.at(1)) + volume;
     }
 
+    inputFile.close();
+
     return totalRibbon;
 }

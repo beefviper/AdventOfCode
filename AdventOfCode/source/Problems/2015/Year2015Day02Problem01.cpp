@@ -66,5 +66,7 @@ int year2015day02problem01()
         totalArea += area + smallest;
     }
 
+    inputFile.close();
+
     return totalArea;
 }

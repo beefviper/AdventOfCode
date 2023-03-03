@@ -98,6 +98,7 @@ int year2015day06problem02()
 	int totalLightsOn = countLights(lights);
 
 	delete[] lights;
+	inputFile.close();
 
 	return totalLightsOn;
 }

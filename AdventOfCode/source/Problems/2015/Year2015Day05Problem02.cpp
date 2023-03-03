@@ -65,6 +65,8 @@ int year2015day05problem02()
 		std::getline(inputFile, inputString);
 	}
 
+	inputFile.close();
+
 	return niceWords;
 }
 
