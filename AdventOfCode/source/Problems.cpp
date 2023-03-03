@@ -10,6 +10,8 @@ int year2015day04problem01();
 int year2015day04problem02();
 int year2015day05problem01();
 int year2015day05problem02();
+int year2015day06problem01();
+int year2015day06problem02();
 
 void createProblems(std::vector<Problem>& problems)
 {
@@ -23,4 +25,6 @@ void createProblems(std::vector<Problem>& problems)
 	problems.push_back({ 20150402, year2015day04problem02, 3938038 });
 	problems.push_back({ 20150501, year2015day05problem01, 236 });
 	problems.push_back({ 20150502, year2015day05problem02, 51 });
+	problems.push_back({ 20150601, year2015day06problem01, 400410 });
+	problems.push_back({ 20150602, year2015day06problem02, 0 });
 }
